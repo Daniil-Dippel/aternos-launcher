@@ -2,3 +2,4 @@ Flask
 selenium
 undetected-chromedriver
 setuptools
+flask-cors
