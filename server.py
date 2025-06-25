@@ -1,11 +1,12 @@
 from flask import Flask, jsonify
+from flask_cors import CORS
 import time
 import os
 import undetected_chromedriver as uc
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 
 app = Flask(__name__)
+CORS(app)  # <-- разрешает CORS-запросы
 
 EMAIL = os.getenv("EMAIL")
 PASSWORD = os.getenv("PASSWORD")
