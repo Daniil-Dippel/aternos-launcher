@@ -51,4 +51,4 @@ def start_server():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=int(os.getenv("PORT", 3000)))
+    app.run(host="0.0.0.0", port=int(os.getenv("PORT", 3000)), debug=True)
