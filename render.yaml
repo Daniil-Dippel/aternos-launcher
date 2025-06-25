@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: aternos-server
+    env: python
+    buildCommand: ""
+    startCommand: "python server.py"
+    envVars:
+      - key: EMAIL
+        value: richer.moni777@gmail.com
+      - key: PASSWORD
+        value: 543regeon
