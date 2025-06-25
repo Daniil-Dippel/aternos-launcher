@@ -48,6 +48,9 @@ def start_server():
             return jsonify({"message": "Сервер уже включён или неактивен."})
 
     except Exception as e:
+        print("Ошибка:", e)
+        import traceback
+        traceback.print_exc()
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
